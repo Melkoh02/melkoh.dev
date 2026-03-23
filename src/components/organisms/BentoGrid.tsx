@@ -1,11 +1,9 @@
 import { useTranslation } from "react-i18next";
 import MaterialIcon from "../atoms/MaterialIcon";
+import solveArenaImg from "../../assets/solve_arena_01.png";
 
 const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
-
-const SOLVE_ARENA_IMAGE_URL =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuDk_Zp-ZYkpQD0MH3SU1kpagrGwHiblBpjc_LYWIoanBmKGTU-ABD_FFfyZQTWZiDxnbbeGCR64lplvP_F95bPEbtdFKyrQuFQA8hSf95oiM0BGkhKmdjUzSwnoLHdjedkHORQli-pfKHU0qj2YEYyRM-cDFOmjyOhsePM9th2tu0PZxAA5d9NC7X6GytTsB0CtI8-wSQ1GkqaEtMC-RFVyjxV7RS63JPwRrLpVrENQb4ftoTyVsDJBglrnL1uKiUaKGfu_JCaWwXtS";
 
 export default function BentoGrid() {
   const { t } = useTranslation();
@@ -31,7 +29,7 @@ export default function BentoGrid() {
           </div>
           <div className="relative w-full aspect-video rounded-lg overflow-hidden mt-8 bg-surface-container">
             <img
-              src={SOLVE_ARENA_IMAGE_URL}
+              src={solveArenaImg}
               alt={t("portfolio.solveArenaAlt")}
               className="object-cover w-full h-full opacity-90 mix-blend-multiply"
             />
