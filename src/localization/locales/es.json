@@ -3,8 +3,9 @@
     "name": "Melkoh"
   },
   "nav": {
-    "about": "Acerca",
+    "home": "Inicio",
     "projects": "Proyectos",
+    "about": "Acerca",
     "contact": "Contacto"
   },
   "hero": {
