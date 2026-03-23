@@ -6,7 +6,7 @@ export default function HeroSection() {
   const { t } = useTranslation();
 
   return (
-    <section id="home" className="min-h-[819px] flex flex-col justify-center px-6 lg:px-24 max-w-7xl mx-auto">
+    <section id="home" className="min-h-[calc(100dvh-6rem)] flex flex-col justify-center px-6 lg:px-24 max-w-7xl mx-auto">
       <div className="space-y-4">
         <SectionLabel>{t("hero.label")}</SectionLabel>
         <h1 className="text-[clamp(3.5rem,10vw,8rem)] font-bold tracking-[-0.04em] leading-[0.9] text-primary">
