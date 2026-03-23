@@ -10,8 +10,7 @@ export default function BentoGrid() {
   return (
     <section
       id="projects"
-      className="px-6 lg:px-24 py-24 max-w-7xl mx-auto bg-surface-container-low"
-    >
+      className="px-6 lg:px-24 py-24 max-w-7xl mx-auto bg-surface-container-low">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         {/* Large Feature Card */}
         <div className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px]">

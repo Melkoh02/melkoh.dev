@@ -23,7 +23,9 @@ export default function Button({
   className = "",
 }: ButtonProps) {
   return (
-    <button onClick={onClick} className={`${variantStyles[variant]} ${className}`}>
+    <button
+      onClick={onClick}
+      className={`${variantStyles[variant]} ${className}`}>
       {children}
     </button>
   );

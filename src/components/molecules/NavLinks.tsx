@@ -12,7 +12,7 @@ export default function NavLinks() {
 
   return (
     <div className="hidden md:flex items-center space-x-8 font-headline tracking-tight text-sm font-medium">
-      {links.map((link) => (
+      {links.map(link => (
         <NavLink key={link.href} {...link} />
       ))}
     </div>

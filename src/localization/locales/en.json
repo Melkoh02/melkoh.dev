@@ -40,10 +40,10 @@
   "contact": {
     "label": "Ready to build?",
     "title": "Let's architect something permanent.",
-    "email": "hello@melkoh.com"
+    "email": "contact@melkoh.dev"
   },
   "footer": {
-    "copyright": "© {{year}} Melkoh. Built for the digital architect.",
+    "copyright": "© {{year}} Melkoh.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
     "layers": "Layers"

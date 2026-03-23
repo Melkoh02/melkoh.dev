@@ -1,7 +1,4 @@
-import i18n, {
-  type LanguageDetectorModule,
-  type Resource,
-} from "i18next";
+import i18n, { type LanguageDetectorModule, type Resource } from "i18next";
 import { initReactI18next } from "react-i18next";
 
 import en from "./locales/en.json";
@@ -25,7 +22,7 @@ const languageDetector: LanguageDetectorModule = {
         selected = stored;
       } else {
         const locales = navigator.languages ?? [navigator.language];
-        const match = locales.find((l) =>
+        const match = locales.find(l =>
           Object.keys(resources).includes(l.split("-")[0]),
         );
         selected = match?.split("-")[0] ?? "en";
@@ -40,7 +37,7 @@ const languageDetector: LanguageDetectorModule = {
     /* no-op */
   },
 
-  cacheUserLanguage: (lang) => {
+  cacheUserLanguage: lang => {
     try {
       localStorage.setItem(LANGUAGE_KEY, lang);
     } catch {
