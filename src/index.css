@@ -1,4 +1,62 @@
-html, body, #root {
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Inter", sans-serif;
+
+  --color-on-surface-variant: #474747;
+  --color-on-surface: #1a1c1d;
+  --color-tertiary-container: #747479;
+  --color-surface-variant: #e2e2e4;
+  --color-on-primary-fixed: #ffffff;
+  --color-primary-fixed: #5f5e60;
+  --color-surface-container: #eeeef0;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-dim: #d9dadc;
+  --color-tertiary-fixed: #5e5e63;
+  --color-on-tertiary-fixed: #ffffff;
+  --color-surface-container-low: #f3f3f5;
+  --color-outline-variant: #c6c6c6;
+  --color-surface-tint: #5f5e60;
+  --color-on-secondary-fixed: #1b1b1e;
+  --color-inverse-surface: #2f3132;
+  --color-on-tertiary: #e3e2e7;
+  --color-on-secondary-container: #1b1b1e;
+  --color-primary: #000000;
+  --color-surface-container-highest: #e2e2e4;
+  --color-on-secondary-fixed-variant: #3b3b3e;
+  --color-on-tertiary-fixed-variant: #e3e2e7;
+  --color-surface-bright: #f9f9fb;
+  --color-on-background: #1a1c1d;
+  --color-secondary-fixed-dim: #acaaae;
+  --color-secondary-fixed: #c7c6c9;
+  --color-tertiary-fixed-dim: #46464b;
+  --color-secondary: #5e5e61;
+  --color-on-error: #ffffff;
+  --color-on-tertiary-container: #ffffff;
+  --color-on-secondary: #ffffff;
+  --color-on-primary-fixed-variant: #e4e2e4;
+  --color-on-primary: #e4e2e4;
+  --color-error-container: #ffdad6;
+  --color-secondary-container: #d6d4d7;
+  --color-tertiary: #3a3b40;
+  --color-on-primary-container: #ffffff;
+  --color-primary-container: #3b3b3d;
+  --color-error: #ba1a1a;
+  --color-primary-fixed-dim: #474649;
+  --color-inverse-primary: #c8c6c8;
+  --color-surface: #f9f9fb;
+  --color-inverse-on-surface: #f0f0f2;
+  --color-on-error-container: #410002;
+  --color-background: #f9f9fb;
+  --color-outline: #777777;
+  --color-surface-container-high: #e8e8ea;
+}
+
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
 }
@@ -6,4 +64,29 @@ html, body, #root {
 #root {
   max-width: none;
   padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f9f9fb;
+  color: #1a1c1d;
+  -webkit-font-smoothing: antialiased;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  vertical-align: middle;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
