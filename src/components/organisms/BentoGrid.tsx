@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import MaterialIcon from "../atoms/MaterialIcon";
 import solveArenaImg from "../../assets/solve_arena_01.png";
+import solveArenaBg from "../../assets/solve_arena_02.png";
 
 const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
@@ -36,16 +37,31 @@ export default function BentoGrid() {
           </div>
         </a>
 
-        {/* Real-Time Systems Card */}
-        <div className="md:col-span-4 bg-primary text-on-primary p-8 rounded-xl flex flex-col justify-between">
-          <MaterialIcon icon="sync" className="text-4xl" />
-          <div className="mt-12">
-            <h3 className="text-xl font-medium tracking-tight">
-              {t("portfolio.realtimeTitle")}
-            </h3>
-            <p className="mt-2 text-sm text-on-primary-fixed-variant leading-relaxed">
-              {t("portfolio.realtimeDescription")}
-            </p>
+        {/* Tech Details Card */}
+        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden">
+          <img
+            src={solveArenaBg}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black" />
+          <div className="relative p-8 space-y-6">
+            <div>
+              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
+                {t("portfolio.realtimeTechLabel")}
+              </h4>
+              <p className="text-sm text-white leading-relaxed">
+                {t("portfolio.realtimeDescription")}
+              </p>
+            </div>
+            <div>
+              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
+                {t("portfolio.realtimeFeaturesLabel")}
+              </h4>
+              <p className="text-sm text-white leading-relaxed">
+                {t("portfolio.realtimeFeatures")}
+              </p>
+            </div>
           </div>
         </div>
 
