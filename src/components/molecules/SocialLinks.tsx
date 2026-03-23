@@ -23,7 +23,7 @@ export default function SocialLinks() {
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-headline text-xs tracking-[0.1rem] uppercase font-medium text-zinc-400 dark:text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors opacity-80 hover:opacity-100">
+          className="font-headline text-xs tracking-[0.1rem] uppercase font-medium text-zinc-500 hover:text-zinc-300 transition-colors opacity-80 hover:opacity-100">
           {link.label}
         </a>
       ))}

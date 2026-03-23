@@ -3,7 +3,6 @@ import HeroSection from "../components/organisms/HeroSection";
 import BentoGrid from "../components/organisms/BentoGrid";
 import AboutSection from "../components/organisms/AboutSection";
 import ContactSection from "../components/organisms/ContactSection";
-import Footer from "../components/organisms/Footer";
 
 export default function HomePage() {
   return (
@@ -15,7 +14,6 @@ export default function HomePage() {
         <AboutSection />
         <ContactSection />
       </main>
-      <Footer />
     </>
   );
 }
