@@ -6,7 +6,7 @@ export default function AboutSection() {
   return (
     <section id="about" className="px-6 lg:px-24 py-40 max-w-7xl mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-24">
-        <div className="sticky top-40 h-fit">
+        <div className="lg:sticky lg:top-40 h-fit">
           <h2 className="text-4xl font-bold tracking-tighter">
             {t("about.title")}
           </h2>
