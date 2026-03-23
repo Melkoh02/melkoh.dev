@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 export default function ContactSection() {
+  const { t } = useTranslation();
+
   return (
     <section
       id="contact"
@@ -6,17 +10,17 @@ export default function ContactSection() {
     >
       <div className="max-w-7xl mx-auto text-center space-y-12">
         <span className="font-label text-xs uppercase tracking-[0.3em] opacity-50">
-          Ready to build?
+          {t("contact.label")}
         </span>
         <h2 className="text-[clamp(2.5rem,6vw,5rem)] font-bold tracking-tighter leading-tight">
-          Let's architect something permanent.
+          {t("contact.title")}
         </h2>
         <div className="pt-12">
           <a
-            href="mailto:hello@melkoh.com"
+            href={`mailto:${t("contact.email")}`}
             className="text-2xl md:text-3xl font-light hover:opacity-70 transition-opacity border-b-2 border-white/20 pb-2"
           >
-            hello@melkoh.com
+            {t("contact.email")}
           </a>
         </div>
       </div>

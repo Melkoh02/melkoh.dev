@@ -1,10 +1,14 @@
-const links = [
-  { href: "#", label: "LinkedIn" },
-  { href: "#", label: "GitHub" },
-  { href: "#", label: "Layers" },
-];
+import { useTranslation } from "react-i18next";
 
 export default function SocialLinks() {
+  const { t } = useTranslation();
+
+  const links = [
+    { href: "#", label: t("footer.linkedin") },
+    { href: "#", label: t("footer.github") },
+    { href: "#", label: t("footer.layers") },
+  ];
+
   return (
     <div className="flex gap-8">
       {links.map((link) => (

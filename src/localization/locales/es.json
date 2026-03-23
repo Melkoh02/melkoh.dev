@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "name": "Melkoh"
+  },
+  "nav": {
+    "about": "Acerca",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "label": "Arquitecto Digital & Desarrollador",
+    "title": "Melkoh.",
+    "description": "Diseñando estructuras de software con la precisión de un maestro relojero. Construyendo experiencias digitales que resisten la prueba del tiempo.",
+    "cta": "VER PROYECTOS"
+  },
+  "portfolio": {
+    "selectedWork01": "Trabajo Seleccionado — 01",
+    "onyxTitle": "Onyx Centro de Productividad",
+    "onyxAlt": "Panel de Onyx — interfaz moderna de productividad oscura",
+    "systemsDesignTitle": "Diseño de Sistemas",
+    "systemsDesignDescription": "Arquitectura robusta para aplicaciones empresariales escalables.",
+    "chronosTitle": "02 — Chronos",
+    "chronosDescription": "Seguimiento de tiempo de lujo para profesionales creativos.",
+    "minimalistTitle": "Filosofía de Interfaz Minimalista",
+    "minimalistDescription": "Restando hasta que solo quede lo esencial."
+  },
+  "about": {
+    "title": "La Filosofía de la Restricción Precisa.",
+    "paragraph1": "Creo que cada píxel debe servir un propósito. En una era de ruido digital, el lujo se define por lo que elegimos omitir.",
+    "paragraph2": "Como desarrollador de software, trato el código como ingeniería estructural. No se trata solo de funcionalidad; se trata de la elegancia de la lógica y la longevidad de la arquitectura. Mi trabajo cierra la brecha entre el pensamiento de diseño de alto nivel y la ejecución técnica de bajo nivel.",
+    "focusLabel": "Enfoque",
+    "valuesLabel": "Valores",
+    "focusUiUx": "Ingeniería UI/UX",
+    "focusArchitecture": "Arquitectura de Sistemas",
+    "focusStrategy": "Estrategia de Producto",
+    "valuesIntegrity": "Integridad Estructural",
+    "valuesSilence": "Silencio Visual",
+    "valuesPerformance": "Rendimiento como UX"
+  },
+  "contact": {
+    "label": "¿Listo para construir?",
+    "title": "Arquitectemos algo permanente.",
+    "email": "hello@melkoh.com"
+  },
+  "footer": {
+    "copyright": "© {{year}} Melkoh. Hecho para el arquitecto digital.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "layers": "Layers"
+  }
+}

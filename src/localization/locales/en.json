@@ -1,0 +1,51 @@
+{
+  "brand": {
+    "name": "Melkoh"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "label": "Digital Architect & Developer",
+    "title": "Melkoh.",
+    "description": "Designing software structures with the precision of a master watchmaker. Building digital experiences that stand the test of time.",
+    "cta": "VIEW PROJECTS"
+  },
+  "portfolio": {
+    "selectedWork01": "Selected Work — 01",
+    "onyxTitle": "Onyx Productivity Hub",
+    "onyxAlt": "Onyx dashboard — modern dark productivity UI",
+    "systemsDesignTitle": "Systems Design",
+    "systemsDesignDescription": "Robust architecture for scalable enterprise applications.",
+    "chronosTitle": "02 — Chronos",
+    "chronosDescription": "Luxury time-tracking for creative professionals.",
+    "minimalistTitle": "Minimalist Interface Philosophy",
+    "minimalistDescription": "Subtracting until only the core remains."
+  },
+  "about": {
+    "title": "The Philosophy of Precise Restraint.",
+    "paragraph1": "I believe that every pixel should serve a purpose. In an era of digital noise, luxury is defined by what we choose to leave out.",
+    "paragraph2": "As a software developer, I treat code like structural engineering. It isn't just about functionality; it's about the elegance of the logic and the longevity of the architecture. My work bridges the gap between high-level design thinking and low-level technical execution.",
+    "focusLabel": "Focus",
+    "valuesLabel": "Values",
+    "focusUiUx": "UI/UX Engineering",
+    "focusArchitecture": "System Architecture",
+    "focusStrategy": "Product Strategy",
+    "valuesIntegrity": "Structural Integrity",
+    "valuesSilence": "Visual Silence",
+    "valuesPerformance": "Performance as UX"
+  },
+  "contact": {
+    "label": "Ready to build?",
+    "title": "Let's architect something permanent.",
+    "email": "hello@melkoh.com"
+  },
+  "footer": {
+    "copyright": "© {{year}} Melkoh. Built for the digital architect.",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "layers": "Layers"
+  }
+}
