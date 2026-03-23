@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 /**
- * Observes a list of section IDs and returns the one currently
- * most visible in the viewport. Uses IntersectionObserver with
- * a top-biased rootMargin so the section is considered "active"
- * once it crosses into the upper portion of the screen.
+ * Scroll-position-based scroll spy. On each scroll frame, checks which
+ * section's top has most recently crossed a reference line (30% from the
+ * top of the viewport). The last section whose top is at or above this
+ * line wins — giving a single, deterministic result with no flicker.
  */
 export default function useActiveSection(sectionIds: string[]): string | null {
   const [activeId, setActiveId] = useState<string | null>(null);
@@ -16,28 +16,45 @@ export default function useActiveSection(sectionIds: string[]): string | null {
 
     if (elements.length === 0) return;
 
-    const observer = new IntersectionObserver(
-      entries => {
-        // Find the entry with the highest intersection ratio among
-        // those that are currently intersecting.
-        const visible = entries
-          .filter(e => e.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+    let ticking = false;
 
-        if (visible.length > 0) {
-          setActiveId(visible[0].target.id);
+    const update = () => {
+      const scrollY = window.scrollY;
+      const offset = window.innerHeight * 0.3;
+
+      let current: string | null = null;
+
+      for (const el of elements) {
+        // offsetTop gives the position relative to the document,
+        // no need for getBoundingClientRect + scrollY math.
+        if (el.offsetTop - offset <= scrollY) {
+          current = el.id;
         }
-      },
-      {
-        // Shrink the observation box: top 40% of viewport triggers activation.
-        // This means a section becomes "active" when it enters the upper 60%.
-        rootMargin: "-20% 0px -40% 0px",
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-      },
-    );
+      }
 
-    elements.forEach(el => observer.observe(el));
-    return () => observer.disconnect();
+      // If at the very top and nothing matched, default to first section
+      if (current === null && elements.length > 0) {
+        current = elements[0].id;
+      }
+
+      setActiveId(current);
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    };
+
+    // Initial check
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
   }, [sectionIds]);
 
   return activeId;
