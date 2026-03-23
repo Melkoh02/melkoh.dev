@@ -14,15 +14,15 @@
     "cta": "VIEW PROJECTS"
   },
   "portfolio": {
-    "selectedWork01": "Selected Work — 01",
-    "onyxTitle": "Onyx Productivity Hub",
-    "onyxAlt": "Onyx dashboard — modern dark productivity UI",
-    "systemsDesignTitle": "Systems Design",
-    "systemsDesignDescription": "Robust architecture for scalable enterprise applications.",
-    "chronosTitle": "02 — Chronos",
-    "chronosDescription": "Luxury time-tracking for creative professionals.",
-    "minimalistTitle": "Minimalist Interface Philosophy",
-    "minimalistDescription": "Subtracting until only the core remains."
+    "featuredLabel": "Featured Project — 01",
+    "solveArenaTitle": "Solve Arena",
+    "solveArenaAlt": "Solve Arena — multiplayer speedcube timer interface",
+    "realtimeTitle": "Real-Time Systems",
+    "realtimeDescription": "Multiplayer architecture powered by Socket.IO for sub-second state sync.",
+    "comingSoonTitle": "02 — More Coming Soon",
+    "comingSoonDescription": "New projects in the workshop. Stay tuned.",
+    "viewLiveTitle": "Try Solve Arena Live",
+    "viewLiveDescription": "Compete against friends with WCA-level scrambles in real time."
   },
   "about": {
     "title": "The Philosophy of Precise Restraint.",
@@ -46,6 +46,6 @@
     "copyright": "© {{year}} Melkoh.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
-    "layers": "Layers"
+    "instagram": "Instagram"
   }
 }

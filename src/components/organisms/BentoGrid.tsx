@@ -1,7 +1,10 @@
 import { useTranslation } from "react-i18next";
 import MaterialIcon from "../atoms/MaterialIcon";
 
-const ONYX_IMAGE_URL =
+const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
+const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
+
+const SOLVE_ARENA_IMAGE_URL =
   "https://lh3.googleusercontent.com/aida-public/AB6AXuDk_Zp-ZYkpQD0MH3SU1kpagrGwHiblBpjc_LYWIoanBmKGTU-ABD_FFfyZQTWZiDxnbbeGCR64lplvP_F95bPEbtdFKyrQuFQA8hSf95oiM0BGkhKmdjUzSwnoLHdjedkHORQli-pfKHU0qj2YEYyRM-cDFOmjyOhsePM9th2tu0PZxAA5d9NC7X6GytTsB0CtI8-wSQ1GkqaEtMC-RFVyjxV7RS63JPwRrLpVrENQb4ftoTyVsDJBglrnL1uKiUaKGfu_JCaWwXtS";
 
 export default function BentoGrid() {
@@ -12,60 +15,71 @@ export default function BentoGrid() {
       id="projects"
       className="px-6 lg:px-24 py-24 max-w-7xl mx-auto bg-surface-container-low">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-        {/* Large Feature Card */}
-        <div className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px]">
+        {/* Solve Arena — Featured Card */}
+        <a
+          href={SOLVE_ARENA_REPO}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px] group">
           <div>
             <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
-              {t("portfolio.selectedWork01")}
+              {t("portfolio.featuredLabel")}
             </span>
-            <h3 className="text-2xl font-bold mt-4 tracking-tight">
-              {t("portfolio.onyxTitle")}
+            <h3 className="text-2xl font-bold mt-4 tracking-tight group-hover:text-primary-fixed transition-colors">
+              {t("portfolio.solveArenaTitle")}
             </h3>
           </div>
           <div className="relative w-full aspect-video rounded-lg overflow-hidden mt-8 bg-surface-container">
             <img
-              src={ONYX_IMAGE_URL}
-              alt={t("portfolio.onyxAlt")}
+              src={SOLVE_ARENA_IMAGE_URL}
+              alt={t("portfolio.solveArenaAlt")}
               className="object-cover w-full h-full opacity-90 mix-blend-multiply"
             />
           </div>
-        </div>
+        </a>
 
-        {/* Systems Design Card */}
+        {/* Real-Time Systems Card */}
         <div className="md:col-span-4 bg-primary text-on-primary p-8 rounded-xl flex flex-col justify-between">
-          <MaterialIcon icon="architecture" className="text-4xl" />
+          <MaterialIcon icon="sync" className="text-4xl" />
           <div className="mt-12">
             <h3 className="text-xl font-medium tracking-tight">
-              {t("portfolio.systemsDesignTitle")}
+              {t("portfolio.realtimeTitle")}
             </h3>
             <p className="mt-2 text-sm text-on-primary-fixed-variant leading-relaxed">
-              {t("portfolio.systemsDesignDescription")}
+              {t("portfolio.realtimeDescription")}
             </p>
           </div>
         </div>
 
-        {/* Chronos Card */}
+        {/* Coming Soon Card */}
         <div className="md:col-span-4 bg-surface-container-highest p-8 rounded-xl">
           <h3 className="text-lg font-bold tracking-tight">
-            {t("portfolio.chronosTitle")}
+            {t("portfolio.comingSoonTitle")}
           </h3>
           <p className="mt-2 text-sm text-on-surface-variant">
-            {t("portfolio.chronosDescription")}
+            {t("portfolio.comingSoonDescription")}
           </p>
         </div>
 
-        {/* Minimalist Interface Card */}
-        <div className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex items-center justify-between">
+        {/* Try Live Card */}
+        <a
+          href={SOLVE_ARENA_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex items-center justify-between group">
           <div>
-            <h3 className="text-lg font-bold tracking-tight">
-              {t("portfolio.minimalistTitle")}
+            <h3 className="text-lg font-bold tracking-tight group-hover:text-primary-fixed transition-colors">
+              {t("portfolio.viewLiveTitle")}
             </h3>
             <p className="text-sm text-on-surface-variant mt-1">
-              {t("portfolio.minimalistDescription")}
+              {t("portfolio.viewLiveDescription")}
             </p>
           </div>
-          <MaterialIcon icon="arrow_forward" className="text-3xl" />
-        </div>
+          <MaterialIcon
+            icon="arrow_forward"
+            className="text-3xl group-hover:translate-x-1 transition-transform"
+          />
+        </a>
       </div>
     </section>
   );

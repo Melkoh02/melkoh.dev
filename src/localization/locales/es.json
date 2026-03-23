@@ -14,15 +14,15 @@
     "cta": "VER PROYECTOS"
   },
   "portfolio": {
-    "selectedWork01": "Trabajo Seleccionado — 01",
-    "onyxTitle": "Onyx Centro de Productividad",
-    "onyxAlt": "Panel de Onyx — interfaz moderna de productividad oscura",
-    "systemsDesignTitle": "Diseño de Sistemas",
-    "systemsDesignDescription": "Arquitectura robusta para aplicaciones empresariales escalables.",
-    "chronosTitle": "02 — Chronos",
-    "chronosDescription": "Seguimiento de tiempo de lujo para profesionales creativos.",
-    "minimalistTitle": "Filosofía de Interfaz Minimalista",
-    "minimalistDescription": "Restando hasta que solo quede lo esencial."
+    "featuredLabel": "Proyecto Destacado — 01",
+    "solveArenaTitle": "Solve Arena",
+    "solveArenaAlt": "Solve Arena — interfaz de cronómetro de speedcube multijugador",
+    "realtimeTitle": "Sistemas en Tiempo Real",
+    "realtimeDescription": "Arquitectura multijugador impulsada por Socket.IO para sincronización en menos de un segundo.",
+    "comingSoonTitle": "02 — Próximamente",
+    "comingSoonDescription": "Nuevos proyectos en el taller. Mantente atento.",
+    "viewLiveTitle": "Prueba Solve Arena en Vivo",
+    "viewLiveDescription": "Compite contra amigos con scrambles de nivel WCA en tiempo real."
   },
   "about": {
     "title": "La Filosofía de la Restricción Precisa.",
@@ -46,6 +46,6 @@
     "copyright": "© {{year}} Melkoh.",
     "linkedin": "LinkedIn",
     "github": "GitHub",
-    "layers": "Layers"
+    "instagram": "Instagram"
   }
 }
