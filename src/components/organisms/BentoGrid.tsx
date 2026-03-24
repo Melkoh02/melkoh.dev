@@ -36,7 +36,7 @@ export default function BentoGrid() {
             <img
               src={solveArenaImg}
               alt={t("portfolio.solveArenaAlt")}
-              className="object-cover w-full h-full opacity-90 mix-blend-multiply"
+              className="object-cover w-full h-full opacity-90 mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         </a>
