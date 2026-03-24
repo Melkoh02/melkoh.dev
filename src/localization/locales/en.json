@@ -17,16 +17,18 @@
   "portfolio": {
     "featuredLabel": "Featured Project — 01",
     "solveArenaTitle": "Solve Arena",
+    "solveArenaSubtitle": "Multiplayer speedcube timer — compete against friends in real time.",
     "solveArenaAlt": "Solve Arena — multiplayer speedcube timer interface",
     "realtimeTitle": "Built With",
     "realtimeDescription": "React 19, TypeScript, Socket.IO, MobX, MUI 7, cubing.js",
     "realtimeFeatures": "Multiplayer rooms, WCA scrambles, live results, ao5/ao12 averages, dark theme",
     "realtimeTechLabel": "Stack",
     "realtimeFeaturesLabel": "Features",
-    "comingSoonTitle": "02 — More Coming Soon",
-    "comingSoonDescription": "New projects in the workshop. Stay tuned.",
-    "viewLiveTitle": "Try Solve Arena Live",
-    "viewLiveDescription": "Compete against friends with WCA-level scrambles in real time."
+    "melkohDevLabel": "Project — 02",
+    "melkohDevTitle": "melkoh.dev",
+    "melkohDevDescription": "This very portfolio. React 19, Tailwind CSS 4, i18n, atomic design. Open source.",
+    "viewRepoTitle": "View Source on GitHub",
+    "viewRepoDescription": "Explore the Solve Arena codebase — React 19, Socket.IO, MobX."
   },
   "about": {
     "title": "The Philosophy of Precise Restraint.",

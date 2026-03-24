@@ -17,16 +17,18 @@
   "portfolio": {
     "featuredLabel": "Proyecto Destacado — 01",
     "solveArenaTitle": "Solve Arena",
+    "solveArenaSubtitle": "Cronómetro de speedcube multijugador — compite contra amigos en tiempo real.",
     "solveArenaAlt": "Solve Arena — interfaz de cronómetro de speedcube multijugador",
     "realtimeTitle": "Construido Con",
     "realtimeDescription": "React 19, TypeScript, Socket.IO, MobX, MUI 7, cubing.js",
     "realtimeFeatures": "Salas multijugador, scrambles WCA, resultados en vivo, promedios ao5/ao12, tema oscuro",
     "realtimeTechLabel": "Stack",
     "realtimeFeaturesLabel": "Características",
-    "comingSoonTitle": "02 — Próximamente",
-    "comingSoonDescription": "Nuevos proyectos en el taller. Mantente atento.",
-    "viewLiveTitle": "Prueba Solve Arena en Vivo",
-    "viewLiveDescription": "Compite contra amigos con scrambles de nivel WCA en tiempo real."
+    "melkohDevLabel": "Proyecto — 02",
+    "melkohDevTitle": "melkoh.dev",
+    "melkohDevDescription": "Este mismo portafolio. React 19, Tailwind CSS 4, i18n, diseño atómico. Código abierto.",
+    "viewRepoTitle": "Ver código en GitHub",
+    "viewRepoDescription": "Explora el código de Solve Arena — React 19, Socket.IO, MobX."
   },
   "about": {
     "title": "La Filosofía de la Restricción Precisa.",

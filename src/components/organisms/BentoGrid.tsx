@@ -5,6 +5,7 @@ import solveArenaBg from "../../assets/solve_arena_02.png";
 
 const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
+const MELKOH_DEV_REPO = "https://github.com/Melkoh02/melkoh.dev";
 
 export default function BentoGrid() {
   const { t } = useTranslation();
@@ -16,10 +17,10 @@ export default function BentoGrid() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
         {/* Solve Arena — Featured Card */}
         <a
-          href={SOLVE_ARENA_REPO}
+          href={SOLVE_ARENA_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px] group">
+          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px] group hover:shadow-lg transition-all duration-300">
           <div>
             <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
               {t("portfolio.featuredLabel")}
@@ -27,6 +28,9 @@ export default function BentoGrid() {
             <h3 className="text-2xl font-bold mt-4 tracking-tight group-hover:text-primary-fixed transition-colors">
               {t("portfolio.solveArenaTitle")}
             </h3>
+            <p className="mt-2 text-sm text-on-surface-variant">
+              {t("portfolio.solveArenaSubtitle")}
+            </p>
           </div>
           <div className="relative w-full aspect-video rounded-lg overflow-hidden mt-8 bg-surface-container">
             <img
@@ -38,11 +42,11 @@ export default function BentoGrid() {
         </a>
 
         {/* Tech Details Card */}
-        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden">
+        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
           <img
             src={solveArenaBg}
             alt=""
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black" />
           <div className="relative p-8 space-y-6">
@@ -65,28 +69,35 @@ export default function BentoGrid() {
           </div>
         </div>
 
-        {/* Coming Soon Card */}
-        <div className="md:col-span-4 bg-surface-container-highest p-8 rounded-xl">
-          <h3 className="text-lg font-bold tracking-tight">
-            {t("portfolio.comingSoonTitle")}
-          </h3>
-          <p className="mt-2 text-sm text-on-surface-variant">
-            {t("portfolio.comingSoonDescription")}
-          </p>
-        </div>
-
-        {/* Try Live Card */}
+        {/* melkoh.dev Card */}
         <a
-          href={SOLVE_ARENA_URL}
+          href={MELKOH_DEV_REPO}
           target="_blank"
           rel="noopener noreferrer"
-          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex items-center justify-between group">
+          className="md:col-span-4 bg-surface-container-highest p-8 rounded-xl group hover:shadow-lg transition-all duration-300">
+          <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
+            {t("portfolio.melkohDevLabel")}
+          </span>
+          <h3 className="text-lg font-bold tracking-tight mt-3 group-hover:text-primary-fixed transition-colors">
+            {t("portfolio.melkohDevTitle")}
+          </h3>
+          <p className="mt-2 text-sm text-on-surface-variant">
+            {t("portfolio.melkohDevDescription")}
+          </p>
+        </a>
+
+        {/* View Source Card */}
+        <a
+          href={SOLVE_ARENA_REPO}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex items-center justify-between group hover:shadow-lg transition-all duration-300">
           <div>
             <h3 className="text-lg font-bold tracking-tight group-hover:text-primary-fixed transition-colors">
-              {t("portfolio.viewLiveTitle")}
+              {t("portfolio.viewRepoTitle")}
             </h3>
             <p className="text-sm text-on-surface-variant mt-1">
-              {t("portfolio.viewLiveDescription")}
+              {t("portfolio.viewRepoDescription")}
             </p>
           </div>
           <MaterialIcon
