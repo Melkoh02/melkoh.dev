@@ -80,6 +80,7 @@
     "role5Item3": "Stack: React, React Native, TypeScript, Django REST Framework, PostgreSQL."
   },
   "about": {
+    "sectionTitle": "Acerca",
     "title": "La Filosofía de la Restricción Precisa.",
     "paragraph1": "Creo que cada píxel debe servir un propósito. En una era de ruido digital, el lujo se define por lo que elegimos omitir.",
     "paragraph2": "Como desarrollador de software, trato el código como ingeniería estructural. No se trata solo de funcionalidad; se trata de la elegancia de la lógica y la longevidad de la arquitectura. Mi trabajo cierra la brecha entre el pensamiento de diseño de alto nivel y la ejecución técnica de bajo nivel.",
@@ -90,7 +91,16 @@
     "focusStrategy": "Estrategia de Producto",
     "valuesIntegrity": "Integridad Estructural",
     "valuesSilence": "Silencio Visual",
-    "valuesPerformance": "Rendimiento como UX"
+    "valuesPerformance": "Rendimiento como UX",
+    "stackLabel": "Competencias Clave",
+    "stackTitle": "El Stack Técnico",
+    "stackFrontend": "Frontend & Móvil",
+    "stackBackend": "Backend & Datos",
+    "stackTools": "Herramientas & Flujo",
+    "stackLanguages": "Idiomas",
+    "langEnglish": "Inglés",
+    "langSpanish": "Español",
+    "langJapanese": "Japonés"
   },
   "contact": {
     "label": "¿Listo para construir?",

@@ -80,6 +80,7 @@
     "role5Item3": "Tech stack: React, React Native, TypeScript, Django REST Framework, PostgreSQL."
   },
   "about": {
+    "sectionTitle": "About",
     "title": "The Philosophy of Precise Restraint.",
     "paragraph1": "I believe that every pixel should serve a purpose. In an era of digital noise, luxury is defined by what we choose to leave out.",
     "paragraph2": "As a software developer, I treat code like structural engineering. It isn't just about functionality; it's about the elegance of the logic and the longevity of the architecture. My work bridges the gap between high-level design thinking and low-level technical execution.",
@@ -90,7 +91,16 @@
     "focusStrategy": "Product Strategy",
     "valuesIntegrity": "Structural Integrity",
     "valuesSilence": "Visual Silence",
-    "valuesPerformance": "Performance as UX"
+    "valuesPerformance": "Performance as UX",
+    "stackLabel": "Core Competencies",
+    "stackTitle": "The Technical Stack",
+    "stackFrontend": "Frontend & Mobile",
+    "stackBackend": "Backend & Data",
+    "stackTools": "Tools & Workflow",
+    "stackLanguages": "Languages",
+    "langEnglish": "English",
+    "langSpanish": "Spanish",
+    "langJapanese": "Japanese"
   },
   "contact": {
     "label": "Ready to build?",
