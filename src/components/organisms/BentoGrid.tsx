@@ -6,6 +6,7 @@ import solveArenaBg from "../../assets/solve_arena_02.png";
 const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
 const MELKOH_DEV_REPO = "https://github.com/Melkoh02/melkoh.dev";
+const MANGO_URL = "https://www.billetera.com.py/";
 
 export default function BentoGrid() {
   const { t } = useTranslation();
@@ -66,6 +67,61 @@ export default function BentoGrid() {
                 {t("portfolio.realtimeFeatures")}
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* Billetera Mango — Description Card */}
+        <a
+          href={MANGO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl group hover:shadow-lg transition-all duration-300">
+          <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
+            {t("portfolio.mangoLabel")}
+          </span>
+          <h3 className="text-2xl font-bold mt-4 tracking-tight group-hover:text-primary-fixed transition-colors">
+            {t("portfolio.mangoTitle")}
+          </h3>
+          <p className="mt-2 text-sm text-on-surface-variant max-w-xl">
+            {t("portfolio.mangoSubtitle")}
+          </p>
+
+          <div className="flex flex-wrap gap-2 mt-6">
+            {["React Native", "TypeScript", "Redux", "UIKit", "Kotlin"].map(
+              tech => (
+                <span
+                  key={tech}
+                  className="text-xs font-medium px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant">
+                  {tech}
+                </span>
+              ),
+            )}
+          </div>
+
+          <div className="flex items-center gap-3 mt-8">
+            <MaterialIcon
+              icon="smartphone"
+              className="text-lg text-on-surface-variant/60"
+            />
+            <p className="text-sm text-on-surface-variant">
+              {t("portfolio.mangoRole")}
+            </p>
+          </div>
+        </a>
+
+        {/* Mango Stat Card */}
+        <div className="md:col-span-4 bg-primary text-on-primary p-8 rounded-xl flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
+          <MaterialIcon icon="trending_up" className="text-4xl" />
+          <div className="mt-auto">
+            <h3 className="text-3xl font-bold tracking-tight">
+              {t("portfolio.mangoStat")}
+            </h3>
+            <p className="mt-1 text-sm text-on-primary-fixed-variant uppercase tracking-widest font-label">
+              {t("portfolio.mangoStatLabel")}
+            </p>
+            <p className="mt-4 text-sm text-on-primary-fixed-variant leading-relaxed">
+              {t("portfolio.mangoStatDescription")}
+            </p>
           </div>
         </div>
 
