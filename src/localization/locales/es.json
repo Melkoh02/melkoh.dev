@@ -18,7 +18,7 @@
   "portfolio": {
     "solveArenaLabel": "Código Abierto — 02",
     "solveArenaTitle": "Solve Arena",
-    "solveArenaSubtitle": "Cronómetro de speedcube multijugador — compite contra amigos en tiempo real.",
+    "solveArenaSubtitle": "Cronómetro de speedcube para todos los eventos WCA — compite contra amigos en salas multijugador en tiempo real o practica solo en modo offline.",
     "solveArenaAlt": "Solve Arena — interfaz de cronómetro de speedcube multijugador",
     "realtimeTitle": "Construido Con",
     "realtimeDescription": "React 19, TypeScript, Socket.IO, MobX, MUI 7, cubing.js",

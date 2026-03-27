@@ -37,55 +37,88 @@ export default function BentoGrid() {
             </p>
           </div>
 
-          <div className="flex items-end justify-center gap-4 mt-8 overflow-hidden">
+          <div className="flex items-center justify-center gap-4 mt-8">
             <img
               src={mango02}
               alt=""
-              className="w-1/4 max-w-[160px] rounded-xl object-contain opacity-80 translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+              className="w-1/4 max-w-[160px] rounded-xl object-contain group-hover:scale-105 transition-transform duration-500"
             />
             <img
               src={mango01}
               alt={t("portfolio.mangoAlt")}
-              className="w-1/3 max-w-[200px] rounded-xl object-contain z-10 group-hover:scale-105 transition-transform duration-500"
+              className="w-1/3 max-w-[200px] rounded-xl object-contain z-10 group-hover:scale-110 transition-transform duration-500"
             />
             <img
               src={mango03}
               alt=""
-              className="w-1/4 max-w-[160px] rounded-xl object-contain opacity-80 translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+              className="w-1/4 max-w-[160px] rounded-xl object-contain group-hover:scale-105 transition-transform duration-500"
             />
           </div>
         </a>
 
-        {/* Mango Stat Card */}
-        <div className="md:col-span-4 bg-primary text-on-primary p-8 rounded-xl flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
-          <div>
-            <MaterialIcon icon="trending_up" className="text-4xl" />
-            <div className="flex flex-wrap gap-2 mt-6">
+        {/* Mango Details Card — Image background */}
+        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+          <img
+            src={mango01}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/50 to-black/95" />
+          <div className="relative p-8 space-y-5">
+            <div>
+              <h3 className="text-3xl font-bold tracking-tight text-white">
+                {t("portfolio.mangoStat")}
+              </h3>
+              <p className="mt-1 text-sm text-white/60 uppercase tracking-widest font-label">
+                {t("portfolio.mangoStatLabel")}
+              </p>
+            </div>
+            <p className="text-sm text-white/70 leading-relaxed">
+              {t("portfolio.mangoStatDescription")}
+            </p>
+            <div className="flex flex-wrap gap-2 pt-2">
               {["React Native", "TypeScript", "Redux", "UIKit", "Kotlin"].map(
                 tech => (
                   <span
                     key={tech}
-                    className="text-xs font-medium px-3 py-1 rounded-full bg-white/10 text-white/80">
+                    className="text-xs font-medium px-3 py-1 rounded-full bg-white/10 text-white/80 backdrop-blur-sm">
                     {tech}
                   </span>
                 ),
               )}
             </div>
           </div>
-          <div className="mt-auto pt-8">
-            <h3 className="text-3xl font-bold tracking-tight">
-              {t("portfolio.mangoStat")}
-            </h3>
-            <p className="mt-1 text-sm text-on-primary-fixed-variant uppercase tracking-widest font-label">
-              {t("portfolio.mangoStatLabel")}
-            </p>
-            <p className="mt-4 text-sm text-on-primary-fixed-variant leading-relaxed">
-              {t("portfolio.mangoStatDescription")}
-            </p>
+        </div>
+
+        {/* Solve Arena Details Card — LEFT (mirrored) */}
+        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+          <img
+            src={solveArenaBg}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-black/95" />
+          <div className="relative p-8 space-y-6">
+            <div>
+              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
+                {t("portfolio.realtimeTechLabel")}
+              </h4>
+              <p className="text-sm text-white leading-relaxed">
+                {t("portfolio.realtimeDescription")}
+              </p>
+            </div>
+            <div>
+              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
+                {t("portfolio.realtimeFeaturesLabel")}
+              </h4>
+              <p className="text-sm text-white leading-relaxed">
+                {t("portfolio.realtimeFeatures")}
+              </p>
+            </div>
           </div>
         </div>
 
-        {/* Solve Arena Card */}
+        {/* Solve Arena Card — RIGHT (mirrored) */}
         <a
           href={SOLVE_ARENA_URL}
           target="_blank"
@@ -111,52 +144,7 @@ export default function BentoGrid() {
           </div>
         </a>
 
-        {/* Solve Arena Details Card */}
-        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
-          <img
-            src={solveArenaBg}
-            alt=""
-            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/40 to-black" />
-          <div className="relative p-8 space-y-6">
-            <div>
-              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
-                {t("portfolio.realtimeTechLabel")}
-              </h4>
-              <p className="text-sm text-white leading-relaxed">
-                {t("portfolio.realtimeDescription")}
-              </p>
-            </div>
-            <div>
-              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
-                {t("portfolio.realtimeFeaturesLabel")}
-              </h4>
-              <p className="text-sm text-white leading-relaxed">
-                {t("portfolio.realtimeFeatures")}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* melkoh.dev Card */}
-        <a
-          href={MELKOH_DEV_REPO}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="md:col-span-4 bg-surface-container-highest p-8 rounded-xl group hover:shadow-lg transition-all duration-300">
-          <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
-            {t("portfolio.melkohDevLabel")}
-          </span>
-          <h3 className="text-lg font-bold tracking-tight mt-3 group-hover:text-primary-fixed transition-colors">
-            {t("portfolio.melkohDevTitle")}
-          </h3>
-          <p className="mt-2 text-sm text-on-surface-variant">
-            {t("portfolio.melkohDevDescription")}
-          </p>
-        </a>
-
-        {/* View Source Card */}
+        {/* View Source Card — LEFT */}
         <a
           href={SOLVE_ARENA_REPO}
           target="_blank"
@@ -174,6 +162,23 @@ export default function BentoGrid() {
             icon="arrow_forward"
             className="text-3xl group-hover:translate-x-1 transition-transform"
           />
+        </a>
+
+        {/* melkoh.dev Card — RIGHT */}
+        <a
+          href={MELKOH_DEV_REPO}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-4 bg-surface-container-highest p-8 rounded-xl group hover:shadow-lg transition-all duration-300">
+          <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
+            {t("portfolio.melkohDevLabel")}
+          </span>
+          <h3 className="text-lg font-bold tracking-tight mt-3 group-hover:text-primary-fixed transition-colors">
+            {t("portfolio.melkohDevTitle")}
+          </h3>
+          <p className="mt-2 text-sm text-on-surface-variant">
+            {t("portfolio.melkohDevDescription")}
+          </p>
         </a>
       </div>
     </section>

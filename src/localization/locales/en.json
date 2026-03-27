@@ -18,7 +18,7 @@
   "portfolio": {
     "solveArenaLabel": "Open Source — 02",
     "solveArenaTitle": "Solve Arena",
-    "solveArenaSubtitle": "Multiplayer speedcube timer — compete against friends in real time.",
+    "solveArenaSubtitle": "Speedcube timer for all WCA events — compete against friends in real-time multiplayer rooms or practice solo in offline mode.",
     "solveArenaAlt": "Solve Arena — multiplayer speedcube timer interface",
     "realtimeTitle": "Built With",
     "realtimeDescription": "React 19, TypeScript, Socket.IO, MobX, MUI 7, cubing.js",

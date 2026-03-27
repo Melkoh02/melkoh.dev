@@ -22,7 +22,7 @@ export default function TimelineItem({
   const isLeft = position === "left";
 
   return (
-    <div className="relative flex flex-col md:flex-row md:items-start gap-6 mb-24 last:mb-0">
+    <div className="relative flex flex-col md:flex-row md:items-start gap-6 mb-12 last:mb-0">
       {/* Timeline dot */}
       <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 top-6 z-10">
         <div

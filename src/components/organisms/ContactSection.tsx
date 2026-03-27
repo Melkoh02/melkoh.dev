@@ -26,7 +26,7 @@ export default function ContactSection() {
 
       <footer className="mt-auto pt-12 max-w-7xl mx-auto w-full">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-          <div className="font-headline text-xs tracking-[0.1rem] uppercase font-medium text-zinc-500">
+          <div className="font-headline text-xs tracking-[0.1rem] uppercase font-medium text-zinc-400">
             {t("footer.copyright", { year: new Date().getFullYear() })}
           </div>
           <SocialLinks />
