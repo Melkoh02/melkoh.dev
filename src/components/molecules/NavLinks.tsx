@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import NavLink from "../atoms/NavLink";
 import useActiveSection from "../../lib/hooks/useActiveSection";
 
-const SECTION_IDS = ["home", "projects", "about", "contact"];
+const SECTION_IDS = ["home", "projects", "experience", "about", "contact"];
 
 export default function NavLinks() {
   const { t } = useTranslation();
@@ -13,6 +13,7 @@ export default function NavLinks() {
     () => [
       { id: "home", label: t("nav.home") },
       { id: "projects", label: t("nav.projects") },
+      { id: "experience", label: t("nav.experience") },
       { id: "about", label: t("nav.about") },
       { id: "contact", label: t("nav.contact") },
     ],
