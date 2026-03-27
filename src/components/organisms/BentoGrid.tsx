@@ -2,6 +2,9 @@ import { useTranslation } from "react-i18next";
 import MaterialIcon from "../atoms/MaterialIcon";
 import solveArenaImg from "../../assets/solve_arena_01.png";
 import solveArenaBg from "../../assets/solve_arena_02.png";
+import mango01 from "../../assets/mango_01.png";
+import mango02 from "../../assets/mango_02.png";
+import mango03 from "../../assets/mango_03.png";
 
 const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
@@ -16,7 +19,73 @@ export default function BentoGrid() {
       id="projects"
       className="px-6 lg:px-24 py-24 max-w-7xl mx-auto bg-surface-container-low">
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
-        {/* Solve Arena — Featured Card */}
+        {/* Billetera Mango — Featured Card */}
+        <a
+          href={MANGO_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px] group hover:shadow-lg transition-all duration-300">
+          <div>
+            <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
+              {t("portfolio.mangoLabel")}
+            </span>
+            <h3 className="text-2xl font-bold mt-4 tracking-tight group-hover:text-primary-fixed transition-colors">
+              {t("portfolio.mangoTitle")}
+            </h3>
+            <p className="mt-2 text-sm text-on-surface-variant max-w-xl">
+              {t("portfolio.mangoSubtitle")}
+            </p>
+          </div>
+
+          <div className="flex items-end justify-center gap-4 mt-8 overflow-hidden">
+            <img
+              src={mango02}
+              alt=""
+              className="w-1/4 max-w-[160px] rounded-xl object-contain opacity-80 translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+            />
+            <img
+              src={mango01}
+              alt={t("portfolio.mangoAlt")}
+              className="w-1/3 max-w-[200px] rounded-xl object-contain z-10 group-hover:scale-105 transition-transform duration-500"
+            />
+            <img
+              src={mango03}
+              alt=""
+              className="w-1/4 max-w-[160px] rounded-xl object-contain opacity-80 translate-y-4 group-hover:translate-y-0 transition-transform duration-500"
+            />
+          </div>
+        </a>
+
+        {/* Mango Stat Card */}
+        <div className="md:col-span-4 bg-primary text-on-primary p-8 rounded-xl flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
+          <div>
+            <MaterialIcon icon="trending_up" className="text-4xl" />
+            <div className="flex flex-wrap gap-2 mt-6">
+              {["React Native", "TypeScript", "Redux", "UIKit", "Kotlin"].map(
+                tech => (
+                  <span
+                    key={tech}
+                    className="text-xs font-medium px-3 py-1 rounded-full bg-white/10 text-white/80">
+                    {tech}
+                  </span>
+                ),
+              )}
+            </div>
+          </div>
+          <div className="mt-auto pt-8">
+            <h3 className="text-3xl font-bold tracking-tight">
+              {t("portfolio.mangoStat")}
+            </h3>
+            <p className="mt-1 text-sm text-on-primary-fixed-variant uppercase tracking-widest font-label">
+              {t("portfolio.mangoStatLabel")}
+            </p>
+            <p className="mt-4 text-sm text-on-primary-fixed-variant leading-relaxed">
+              {t("portfolio.mangoStatDescription")}
+            </p>
+          </div>
+        </div>
+
+        {/* Solve Arena Card */}
         <a
           href={SOLVE_ARENA_URL}
           target="_blank"
@@ -24,7 +93,7 @@ export default function BentoGrid() {
           className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px] group hover:shadow-lg transition-all duration-300">
           <div>
             <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
-              {t("portfolio.featuredLabel")}
+              {t("portfolio.solveArenaLabel")}
             </span>
             <h3 className="text-2xl font-bold mt-4 tracking-tight group-hover:text-primary-fixed transition-colors">
               {t("portfolio.solveArenaTitle")}
@@ -42,7 +111,7 @@ export default function BentoGrid() {
           </div>
         </a>
 
-        {/* Tech Details Card */}
+        {/* Solve Arena Details Card */}
         <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
           <img
             src={solveArenaBg}
@@ -67,61 +136,6 @@ export default function BentoGrid() {
                 {t("portfolio.realtimeFeatures")}
               </p>
             </div>
-          </div>
-        </div>
-
-        {/* Billetera Mango — Description Card */}
-        <a
-          href={MANGO_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl group hover:shadow-lg transition-all duration-300">
-          <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
-            {t("portfolio.mangoLabel")}
-          </span>
-          <h3 className="text-2xl font-bold mt-4 tracking-tight group-hover:text-primary-fixed transition-colors">
-            {t("portfolio.mangoTitle")}
-          </h3>
-          <p className="mt-2 text-sm text-on-surface-variant max-w-xl">
-            {t("portfolio.mangoSubtitle")}
-          </p>
-
-          <div className="flex flex-wrap gap-2 mt-6">
-            {["React Native", "TypeScript", "Redux", "UIKit", "Kotlin"].map(
-              tech => (
-                <span
-                  key={tech}
-                  className="text-xs font-medium px-3 py-1.5 rounded-full bg-surface-container-high text-on-surface-variant">
-                  {tech}
-                </span>
-              ),
-            )}
-          </div>
-
-          <div className="flex items-center gap-3 mt-8">
-            <MaterialIcon
-              icon="smartphone"
-              className="text-lg text-on-surface-variant/60"
-            />
-            <p className="text-sm text-on-surface-variant">
-              {t("portfolio.mangoRole")}
-            </p>
-          </div>
-        </a>
-
-        {/* Mango Stat Card */}
-        <div className="md:col-span-4 bg-primary text-on-primary p-8 rounded-xl flex flex-col justify-between group hover:shadow-lg transition-all duration-300">
-          <MaterialIcon icon="trending_up" className="text-4xl" />
-          <div className="mt-auto">
-            <h3 className="text-3xl font-bold tracking-tight">
-              {t("portfolio.mangoStat")}
-            </h3>
-            <p className="mt-1 text-sm text-on-primary-fixed-variant uppercase tracking-widest font-label">
-              {t("portfolio.mangoStatLabel")}
-            </p>
-            <p className="mt-4 text-sm text-on-primary-fixed-variant leading-relaxed">
-              {t("portfolio.mangoStatDescription")}
-            </p>
           </div>
         </div>
 
