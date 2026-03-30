@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import MaterialIcon from "../atoms/MaterialIcon";
 import solveArenaImg from "../../assets/solve_arena_01.png";
 import solveArenaBg from "../../assets/solve_arena_02.png";
 import mango01 from "../../assets/mango_01.png";
@@ -7,6 +6,8 @@ import mango02 from "../../assets/mango_02.png";
 import mango03 from "../../assets/mango_03.png";
 import coopYsaImg from "../../assets/coop_ysa_01.png";
 import coopYsaBg from "../../assets/coop_ysa_02.png";
+import melkohDevImg from "../../assets/melkoh_dev_01.png";
+import melkohDevBg from "../../assets/melkoh_dev_02.png";
 
 const SOLVE_ARENA_URL = "https://solvearena.net/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
@@ -210,41 +211,62 @@ export default function BentoGrid() {
           </div>
         </a>
 
-        {/* View Source Card — LEFT */}
-        <a
-          href={SOLVE_ARENA_REPO}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex items-center justify-between group hover:shadow-lg transition-all duration-300">
-          <div>
-            <h3 className="text-lg font-bold tracking-tight group-hover:text-primary-fixed transition-colors">
-              {t("portfolio.viewRepoTitle")}
-            </h3>
-            <p className="text-sm text-on-surface-variant mt-1">
-              {t("portfolio.viewRepoDescription")}
-            </p>
-          </div>
-          <MaterialIcon
-            icon="arrow_forward"
-            className="text-3xl group-hover:translate-x-1 transition-transform"
-          />
-        </a>
-
-        {/* melkoh.dev Card — RIGHT */}
+        {/* melkoh.dev Details Card — LEFT (mirrored) */}
         <a
           href={MELKOH_DEV_REPO}
           target="_blank"
           rel="noopener noreferrer"
-          className="md:col-span-4 bg-surface-container-highest p-8 rounded-xl group hover:shadow-lg transition-all duration-300">
-          <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
-            {t("portfolio.melkohDevLabel")}
-          </span>
-          <h3 className="text-lg font-bold tracking-tight mt-3 group-hover:text-primary-fixed transition-colors">
-            {t("portfolio.melkohDevTitle")}
-          </h3>
-          <p className="mt-2 text-sm text-on-surface-variant">
-            {t("portfolio.melkohDevDescription")}
-          </p>
+          className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+          <img
+            src={melkohDevBg}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-black/95" />
+          <div className="relative p-8 space-y-6">
+            <div>
+              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
+                {t("portfolio.melkohDevTechLabel")}
+              </h4>
+              <p className="text-sm text-white leading-relaxed">
+                {t("portfolio.melkohDevTechDescription")}
+              </p>
+            </div>
+            <div>
+              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
+                {t("portfolio.melkohDevFeaturesLabel")}
+              </h4>
+              <p className="text-sm text-white leading-relaxed">
+                {t("portfolio.melkohDevFeatures")}
+              </p>
+            </div>
+          </div>
+        </a>
+
+        {/* melkoh.dev Card — RIGHT (mirrored) */}
+        <a
+          href={MELKOH_DEV_REPO}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px] group hover:shadow-lg transition-all duration-300">
+          <div>
+            <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
+              {t("portfolio.melkohDevLabel")}
+            </span>
+            <h3 className="text-2xl font-bold mt-4 tracking-tight group-hover:text-primary-fixed transition-colors">
+              {t("portfolio.melkohDevTitle")}
+            </h3>
+            <p className="mt-2 text-sm text-on-surface-variant">
+              {t("portfolio.melkohDevDescription")}
+            </p>
+          </div>
+          <div className="relative w-full aspect-video rounded-lg overflow-hidden mt-8 bg-surface-container">
+            <img
+              src={melkohDevImg}
+              alt={t("portfolio.melkohDevAlt")}
+              className="object-cover w-full h-full opacity-90 mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
         </a>
       </div>
     </section>

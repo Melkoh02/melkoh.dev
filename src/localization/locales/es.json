@@ -44,8 +44,11 @@
     "melkohDevLabel": "Código Abierto — 04",
     "melkohDevTitle": "melkoh.dev",
     "melkohDevDescription": "Este mismo portafolio. React 19, Tailwind CSS 4, i18n, diseño atómico. Código abierto.",
-    "viewRepoTitle": "Ver código en GitHub",
-    "viewRepoDescription": "Explora el código de Solve Arena — React 19, Socket.IO, MobX."
+    "melkohDevAlt": "melkoh.dev — interfaz del sitio web portafolio",
+    "melkohDevTechLabel": "Stack",
+    "melkohDevTechDescription": "React 19, TypeScript, Vite, Tailwind CSS 4, i18next, diseño atómico",
+    "melkohDevFeaturesLabel": "Características",
+    "melkohDevFeatures": "Bilingüe (EN/ES), tokens Material Design 3, grilla bento responsiva, tema claro/oscuro, código abierto"
   },
   "experience": {
     "label": "Historia Profesional",

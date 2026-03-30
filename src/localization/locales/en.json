@@ -44,8 +44,11 @@
     "melkohDevLabel": "Open Source — 04",
     "melkohDevTitle": "melkoh.dev",
     "melkohDevDescription": "This very portfolio. React 19, Tailwind CSS 4, i18n, atomic design. Open source.",
-    "viewRepoTitle": "View Source on GitHub",
-    "viewRepoDescription": "Explore the Solve Arena codebase — React 19, Socket.IO, MobX."
+    "melkohDevAlt": "melkoh.dev — portfolio website interface",
+    "melkohDevTechLabel": "Stack",
+    "melkohDevTechDescription": "React 19, TypeScript, Vite, Tailwind CSS 4, i18next, atomic design",
+    "melkohDevFeaturesLabel": "Features",
+    "melkohDevFeatures": "Bilingual (EN/ES), Material Design 3 tokens, responsive bento grid, dark/light theme, open source"
   },
   "experience": {
     "label": "Professional History",
