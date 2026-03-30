@@ -5,11 +5,13 @@ import solveArenaBg from "../../assets/solve_arena_02.png";
 import mango01 from "../../assets/mango_01.png";
 import mango02 from "../../assets/mango_02.png";
 import mango03 from "../../assets/mango_03.png";
+import coopYsaImg from "../../assets/coop_ysa_01.png";
 
 const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
 const MELKOH_DEV_REPO = "https://github.com/Melkoh02/melkoh.dev";
 const MANGO_URL = "https://www.billetera.com.py/";
+const COOP_YSA_REPO = "https://github.com/melkoh02/coop-ysa";
 
 export default function BentoGrid() {
   const { t } = useTranslation();
@@ -143,6 +145,60 @@ export default function BentoGrid() {
             />
           </div>
         </a>
+
+        {/* Cooperativa Ysateños — Featured Card */}
+        <a
+          href={COOP_YSA_REPO}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px] group hover:shadow-lg transition-all duration-300">
+          <div>
+            <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
+              {t("portfolio.coopYsaLabel")}
+            </span>
+            <h3 className="text-2xl font-bold mt-4 tracking-tight group-hover:text-primary-fixed transition-colors">
+              {t("portfolio.coopYsaTitle")}
+            </h3>
+            <p className="mt-2 text-sm text-on-surface-variant max-w-xl">
+              {t("portfolio.coopYsaSubtitle")}
+            </p>
+          </div>
+          <div className="relative w-full aspect-video rounded-lg overflow-hidden mt-8 bg-surface-container">
+            <img
+              src={coopYsaImg}
+              alt={t("portfolio.coopYsaAlt")}
+              className="object-cover object-top w-full h-full opacity-90 mix-blend-multiply group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </a>
+
+        {/* Coop Ysateños Details Card */}
+        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+          <img
+            src={coopYsaImg}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/50 to-black/95" />
+          <div className="relative p-8 space-y-6">
+            <div>
+              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
+                {t("portfolio.coopYsaTechLabel")}
+              </h4>
+              <p className="text-sm text-white leading-relaxed">
+                {t("portfolio.coopYsaTechDescription")}
+              </p>
+            </div>
+            <div>
+              <h4 className="font-label text-[0.65rem] uppercase tracking-widest text-white/50 mb-2">
+                {t("portfolio.coopYsaFeaturesLabel")}
+              </h4>
+              <p className="text-sm text-white leading-relaxed">
+                {t("portfolio.coopYsaFeatures")}
+              </p>
+            </div>
+          </div>
+        </div>
 
         {/* View Source Card — LEFT */}
         <a
