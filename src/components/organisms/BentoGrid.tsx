@@ -8,11 +8,12 @@ import mango03 from "../../assets/mango_03.png";
 import coopYsaImg from "../../assets/coop_ysa_01.png";
 import coopYsaBg from "../../assets/coop_ysa_02.png";
 
-const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
+const SOLVE_ARENA_URL = "https://solvearena.net/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
 const MELKOH_DEV_REPO = "https://github.com/Melkoh02/melkoh.dev";
 const MANGO_URL = "https://play.google.com/store/apps/details?id=com.mangopayment.mangoapp&hl=es";
 const COOP_YSA_URL = "https://www.xn--ysateos-8za.com/";
+const COOP_YSA_REPO = "https://github.com/melkoh02/coop-ysa";
 
 export default function BentoGrid() {
   const { t } = useTranslation();
@@ -94,7 +95,11 @@ export default function BentoGrid() {
         </div>
 
         {/* Solve Arena Details Card — LEFT (mirrored) */}
-        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+        <a
+          href={SOLVE_ARENA_REPO}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
           <img
             src={solveArenaBg}
             alt=""
@@ -119,7 +124,7 @@ export default function BentoGrid() {
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
         {/* Solve Arena Card — RIGHT (mirrored) */}
         <a
@@ -174,7 +179,11 @@ export default function BentoGrid() {
         </a>
 
         {/* Coop Ysateños Details Card */}
-        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+        <a
+          href={COOP_YSA_REPO}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
           <img
             src={coopYsaBg}
             alt=""
@@ -199,7 +208,7 @@ export default function BentoGrid() {
               </p>
             </div>
           </div>
-        </div>
+        </a>
 
         {/* View Source Card — LEFT */}
         <a
