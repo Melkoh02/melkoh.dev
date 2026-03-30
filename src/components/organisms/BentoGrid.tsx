@@ -11,8 +11,8 @@ import coopYsaBg from "../../assets/coop_ysa_02.png";
 const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
 const MELKOH_DEV_REPO = "https://github.com/Melkoh02/melkoh.dev";
-const MANGO_URL = "https://www.billetera.com.py/";
-const COOP_YSA_REPO = "https://github.com/melkoh02/coop-ysa";
+const MANGO_URL = "https://play.google.com/store/apps/details?id=com.mangopayment.mangoapp&hl=es";
+const COOP_YSA_URL = "https://www.xn--ysateos-8za.com/";
 
 export default function BentoGrid() {
   const { t } = useTranslation();
@@ -149,7 +149,7 @@ export default function BentoGrid() {
 
         {/* Cooperativa Ysateños — Featured Card */}
         <a
-          href={COOP_YSA_REPO}
+          href={COOP_YSA_URL}
           target="_blank"
           rel="noopener noreferrer"
           className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px] group hover:shadow-lg transition-all duration-300">
