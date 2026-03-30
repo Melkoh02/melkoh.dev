@@ -6,6 +6,7 @@ import mango01 from "../../assets/mango_01.png";
 import mango02 from "../../assets/mango_02.png";
 import mango03 from "../../assets/mango_03.png";
 import coopYsaImg from "../../assets/coop_ysa_01.png";
+import coopYsaBg from "../../assets/coop_ysa_02.png";
 
 const SOLVE_ARENA_URL = "https://melkoh02.github.io/solve-arena/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
@@ -175,7 +176,7 @@ export default function BentoGrid() {
         {/* Coop Ysateños Details Card */}
         <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
           <img
-            src={coopYsaImg}
+            src={coopYsaBg}
             alt=""
             className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
           />
