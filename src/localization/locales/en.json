@@ -48,7 +48,14 @@
     "melkohDevTechLabel": "Stack",
     "melkohDevTechDescription": "React 19, TypeScript, Vite, Tailwind CSS 4, i18next, atomic design",
     "melkohDevFeaturesLabel": "Features",
-    "melkohDevFeatures": "Bilingual (EN/ES), Material Design 3 tokens, responsive bento grid, dark/light theme, open source"
+    "melkohDevFeatures": "Bilingual (EN/ES), Material Design 3 tokens, responsive bento grid, dark/light theme, open source",
+    "myWalletLabel": "Open Source — 05",
+    "myWalletAlt": "My Wallet — offline expense tracker mobile app interface",
+    "myWalletTitle": "My Wallet",
+    "myWalletSubtitle": "Fully offline personal finance tracker for mobile. Income, expenses, and transfers across multiple accounts and currencies — every transaction lives locally on your device. No accounts, no servers, no internet required.",
+    "myWalletStat": "100%",
+    "myWalletStatLabel": "Offline",
+    "myWalletStatDescription": "Privacy by design — every transaction lives on your device. SQLite + Drizzle ORM, 33 currencies, recurring transactions, atomic JSON backups."
   },
   "experience": {
     "label": "Professional History",

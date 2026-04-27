@@ -48,7 +48,14 @@
     "melkohDevTechLabel": "Stack",
     "melkohDevTechDescription": "React 19, TypeScript, Vite, Tailwind CSS 4, i18next, diseño atómico",
     "melkohDevFeaturesLabel": "Características",
-    "melkohDevFeatures": "Bilingüe (EN/ES), tokens Material Design 3, grilla bento responsiva, tema claro/oscuro, código abierto"
+    "melkohDevFeatures": "Bilingüe (EN/ES), tokens Material Design 3, grilla bento responsiva, tema claro/oscuro, código abierto",
+    "myWalletLabel": "Código Abierto — 05",
+    "myWalletAlt": "My Wallet — interfaz de la app móvil de seguimiento de gastos sin conexión",
+    "myWalletTitle": "My Wallet",
+    "myWalletSubtitle": "Rastreador de finanzas personales totalmente sin conexión para móvil. Ingresos, gastos y transferencias entre múltiples cuentas y monedas — cada transacción vive localmente en tu dispositivo. Sin cuentas, sin servidores, sin internet.",
+    "myWalletStat": "100%",
+    "myWalletStatLabel": "Sin Conexión",
+    "myWalletStatDescription": "Privacidad por diseño — cada transacción vive en tu dispositivo. SQLite + Drizzle ORM, 33 monedas, transacciones recurrentes, copias de seguridad JSON atómicas."
   },
   "experience": {
     "label": "Historia Profesional",

@@ -8,6 +8,9 @@ import coopYsaImg from "../../assets/coop_ysa_01.png";
 import coopYsaBg from "../../assets/coop_ysa_02.png";
 import melkohDevImg from "../../assets/melkoh_dev_01.png";
 import melkohDevBg from "../../assets/melkoh_dev_02.png";
+import myWallet01 from "../../assets/my-wallet_01.png";
+import myWallet02 from "../../assets/my-wallet_02.png";
+import myWallet03 from "../../assets/my-wallet_03.png";
 
 const SOLVE_ARENA_URL = "https://solvearena.net/";
 const SOLVE_ARENA_REPO = "https://github.com/Melkoh02/solve-arena";
@@ -15,6 +18,7 @@ const MELKOH_DEV_REPO = "https://github.com/Melkoh02/melkoh.dev";
 const MANGO_URL = "https://play.google.com/store/apps/details?id=com.mangopayment.mangoapp&hl=es";
 const COOP_YSA_URL = "https://www.xn--ysateos-8za.com/";
 const COOP_YSA_REPO = "https://github.com/melkoh02/coop-ysa";
+const MY_WALLET_REPO = "https://github.com/Melkoh02/my-wallet";
 
 export default function BentoGrid() {
   const { t } = useTranslation();
@@ -268,6 +272,77 @@ export default function BentoGrid() {
             />
           </div>
         </a>
+
+        {/* My Wallet — Featured Card */}
+        <a
+          href={MY_WALLET_REPO}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:col-span-8 bg-surface-container-lowest p-8 rounded-xl flex flex-col justify-between min-h-[400px] group hover:shadow-lg transition-all duration-300">
+          <div>
+            <span className="font-label text-[0.7rem] uppercase tracking-widest text-on-surface-variant">
+              {t("portfolio.myWalletLabel")}
+            </span>
+            <h3 className="text-2xl font-bold mt-4 tracking-tight group-hover:text-primary-fixed transition-colors">
+              {t("portfolio.myWalletTitle")}
+            </h3>
+            <p className="mt-2 text-sm text-on-surface-variant max-w-xl">
+              {t("portfolio.myWalletSubtitle")}
+            </p>
+          </div>
+
+          <div className="flex items-center justify-center gap-4 mt-8">
+            <img
+              src={myWallet02}
+              alt=""
+              className="w-1/4 max-w-[160px] rounded-xl object-contain group-hover:scale-105 transition-transform duration-500"
+            />
+            <img
+              src={myWallet01}
+              alt={t("portfolio.myWalletAlt")}
+              className="w-1/3 max-w-[200px] rounded-xl object-contain z-10 group-hover:scale-110 transition-transform duration-500"
+            />
+            <img
+              src={myWallet03}
+              alt=""
+              className="w-1/4 max-w-[160px] rounded-xl object-contain group-hover:scale-105 transition-transform duration-500"
+            />
+          </div>
+        </a>
+
+        {/* My Wallet Details Card — Image background */}
+        <div className="md:col-span-4 rounded-xl flex flex-col justify-end relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+          <img
+            src={myWallet01}
+            alt=""
+            className="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/50 to-black/95" />
+          <div className="relative p-8 space-y-5">
+            <div>
+              <h3 className="text-3xl font-bold tracking-tight text-white">
+                {t("portfolio.myWalletStat")}
+              </h3>
+              <p className="mt-1 text-sm text-white/60 uppercase tracking-widest font-label">
+                {t("portfolio.myWalletStatLabel")}
+              </p>
+            </div>
+            <p className="text-sm text-white/70 leading-relaxed">
+              {t("portfolio.myWalletStatDescription")}
+            </p>
+            <div className="flex flex-wrap gap-2 pt-2">
+              {["React Native", "Expo", "TypeScript", "SQLite", "Drizzle"].map(
+                tech => (
+                  <span
+                    key={tech}
+                    className="text-xs font-medium px-3 py-1 rounded-full bg-white/10 text-white/80 backdrop-blur-sm">
+                    {tech}
+                  </span>
+                ),
+              )}
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );
